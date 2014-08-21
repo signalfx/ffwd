@@ -1,0 +1,4 @@
+:output:
+  - :type: "signalfuse"
+    :apitoken : "yourtokenhere"
+    :url: "https://api.signalfuse.com"
