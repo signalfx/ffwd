@@ -1,5 +1,5 @@
 # $LICENSE
-# Copyright 2013-2014 Spotify AB. All rights reserved.
+# Copyright 2013-2014 SignalFuse All rights reserved.
 #
 # The contents of this file are licensed under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with the
@@ -48,9 +48,9 @@ module FFWD::Plugin::Signalfuse
 
     def send metrics
       headers = {
-          :'Content-Type' => 'application/json',
-          :'X-SF-TOKEN' => @apitoken,
-          :'User-Agent' => "ffwd/" + FFWD::Plugin::Signalfuse::VERSION
+        :'Content-Type' => 'application/json',
+        :'X-SF-TOKEN' => @apitoken,
+        :'User-Agent' => "ffwd/" + FFWD::Plugin::Signalfuse::VERSION
       }
       metrics = Utils.make_metrics(metrics)
       body = ""
